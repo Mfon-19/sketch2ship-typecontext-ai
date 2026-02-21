@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeContext AI | Semantic Font Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">TypeContext<span>AI</span></div>
+            <p class="subtitle">Describe your project. We'll handle the typography.</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <textarea id="projectDescription" placeholder="Example: I am building a secure banking app for young professionals that feels trustworthy but modern..."></textarea>
+                <button id="analyzeBtn">Suggest Typography</button>
+            </section>
+
+            <section id="resultsSection" class="hidden">
+                <div class="results-grid">
+                    <div class="recommendations">
+                        <h3>Top Recommendations</h3>
+                        <div id="fontCards"></div>
+                    </div>
+                    <div class="preview-pane">
+                        <div class="preview-header">
+                            <h3>Live Dashboard Preview</h3>
+                            <span class="font-label" id="currentFontLabel">Inter</span>
+                        </div>
+                        <div class="mock-ui" id="mockUI">
+                            <nav class="mock-nav"></nav>
+                            <div class="mock-content">
+                                <h1 class="preview-heading">Welcome to the Future</h1>
+                                <p class="preview-body">This is a live preview of how your chosen font looks in a standard SaaS dashboard. Notice the readability and the visual weight of the headers.</p>
+                                <div class="mock-stats">
+                                    <div class="stat-box">$24,000</div>
+                                    <div class="stat-box">1,200 users</div>
+                                </div>
+                                <button class="mock-btn">Action Primary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
